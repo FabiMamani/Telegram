@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a69b405-0af9-4e00-9887-4b477a582250" name="Changes" comment="add sendMail">
-      <change afterPath="$PROJECT_DIR$/src/main/java/notificadores/Email.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/notificadores/Telegram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notificadores/Telegram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notificadores/Email.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notificadores/Whatsapp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/NotificadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NotificadorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,11 +75,11 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradle dependencies" />
-      <command value="gradle clean" />
       <command value="gradle build" />
+      <command value="gradle clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.NotificadorTest">
+  <component name="RunManager" selected="Gradle.classroom-extensiones [clean]">
     <configuration name="SmsSender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="notificadores.SmsSender" />
       <module name="classroom-notifiers.main" />
@@ -227,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729275807391</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add sendMail">
+      <created>1729279820848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729279820848</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
