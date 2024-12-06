@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a69b405-0af9-4e00-9887-4b477a582250" name="Changes" comment="add sendMail">
+    <list default="true" id="8a69b405-0af9-4e00-9887-4b477a582250" name="Changes" comment="delete Email class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/notificadores/Email.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/notificadores/Whatsapp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/notificadores/Telegram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notificadores/Telegram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/NotificadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NotificadorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +63,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/GUSTAVO/IdeaProjects/classroom-extensiones&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/GUSTAVO/IdeaProjects/classroom-notifier-ui&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.33563218&quot;,
@@ -74,26 +72,14 @@
 }</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="gradle dependencies" />
       <command value="gradle build" />
       <command value="gradle clean" />
+      <command value="gradle buildDependents" />
+      <command value="gradle dependencies" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.classroom-extensiones [clean]">
-    <configuration name="SmsSender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="notificadores.SmsSender" />
-      <module name="classroom-notifiers.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="notificadores.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NotificadorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.NotificadorTest.TelegramTest">
+    <configuration name="NotificadorTest.TelegramTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +92,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;NotificadorTest&quot;" />
+            <option value="&quot;NotificadorTest.TelegramTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -116,7 +102,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="NotificadorTest.EmailTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NotificadorTest.WhatsappTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +115,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;NotificadorTest.EmailTest&quot;" />
+            <option value="&quot;NotificadorTest.WhatsappTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -139,7 +125,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="classroom-extensiones [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="classroom-extensiones [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -150,7 +136,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value="buildDependents" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,13 +167,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="classroom-extensiones [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NotificadorTest" />
-        <item itemvalue="Gradle.NotificadorTest.EmailTest" />
-        <item itemvalue="Gradle.classroom-extensiones [build]" />
+        <item itemvalue="Gradle.NotificadorTest.TelegramTest" />
         <item itemvalue="Gradle.classroom-extensiones [clean]" />
-        <item itemvalue="Application.SmsSender" />
+        <item itemvalue="Gradle.classroom-extensiones [dependencies]" />
+        <item itemvalue="Gradle.NotificadorTest.WhatsappTest" />
+        <item itemvalue="Gradle.classroom-extensiones [buildDependents]" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1729279820848</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="delete Email class">
+      <created>1730731864276</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730731864276</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +268,7 @@
     <MESSAGE value="update project" />
     <MESSAGE value="add Telegram" />
     <MESSAGE value="add sendMail" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sendMail" />
+    <MESSAGE value="delete Email class" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete Email class" />
   </component>
 </project>

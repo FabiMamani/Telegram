@@ -1,25 +1,17 @@
 package notificadores;
 
-import classroom.notifier.entity.Alumno;
-import classroom.notifier.implement.MedioComunicacion;
+import classroom.notifier.entity.Observable;
+import classroom.notifier.implement.Observer;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
-public class Telegram implements MedioComunicacion {
+public class Telegram implements Observer {
     String name = "Telegram";
     private static final String BOT_TOKEN = "7834829611:AAHBM2XOqC0F5dYFFqVlxENXNlgLYMq032w";
     private static final String CHAT_ID = "953342229";
-    @Override
-    public void Notificar(String Materia, String Aula, List<Alumno> destinatarios) {
-        String msj = "La materia: "+ Materia+" cambio a Aula -> "+ Aula;
-        try {
-            sendMessage(msj);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
+
     public static void sendMessage(String message) throws Exception {
         String urlString = "https://api.telegram.org/bot" + BOT_TOKEN + "/sendMessage?chat_id=" + CHAT_ID + "&text=" + message;
         URL url = new URL(urlString);
@@ -37,10 +29,13 @@ public class Telegram implements MedioComunicacion {
     }
 
     @Override
-    public String getMedio() {
-        return name;
+    public void update(Observable observable, Object arg) {
+        try {
+            sendMessage(new String((String) arg));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     //953342229
-
 }

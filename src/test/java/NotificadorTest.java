@@ -1,14 +1,16 @@
 
-import classroom.notifier.implement.MedioComunicacion;
+
+import classroom.notifier.implement.Observer;
 import notificadores.Telegram;
 import org.junit.jupiter.api.Test;
 
 
 public class NotificadorTest {
-    public MedioComunicacion notificador;
+
     @Test
-    public void WhatsappTest(){
-        notificador = new Telegram();
-        notificador.Notificar("PP2","A0102", null);
+    public void TelegramTest(){
+        Observer notificador =  new Telegram();
+        String msj = "La materia pp3 cambio al aula A0102";
+        notificador.update(null,msj);
     }
 }
