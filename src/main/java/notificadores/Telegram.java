@@ -29,7 +29,7 @@ public class Telegram implements Observer {
     }
 
     @Override
-    public void update(Observable observable, Object arg) {
+    public void update(Object arg) {
         try {
             sendMessage(new String((String) arg));
         } catch (Exception e) {

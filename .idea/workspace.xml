@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a69b405-0af9-4e00-9887-4b477a582250" name="Changes" comment="delete Email class">
+    <list default="true" id="8a69b405-0af9-4e00-9887-4b477a582250" name="Changes" comment="project updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/notificadores/Telegram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notificadores/Telegram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/NotificadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NotificadorTest.java" afterDir="false" />
     </list>
@@ -249,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1730731864276</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="project updated">
+      <created>1733520142009</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733520142009</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +277,7 @@
     <MESSAGE value="add Telegram" />
     <MESSAGE value="add sendMail" />
     <MESSAGE value="delete Email class" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete Email class" />
+    <MESSAGE value="project updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="project updated" />
   </component>
 </project>
