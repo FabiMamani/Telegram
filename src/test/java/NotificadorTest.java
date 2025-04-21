@@ -1,5 +1,6 @@
 
 
+import classroom.notifier.entity.Observable;
 import classroom.notifier.implement.Observer;
 import notificadores.Telegram;
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,6 @@ public class NotificadorTest {
     public void TelegramTest(){
         Observer notificador =  new Telegram();
         String msj = "La materia pp3 cambio al aula A0102";
-        notificador.update(msj);
+        notificador.update(null,msj);
     }
 }

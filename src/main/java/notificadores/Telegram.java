@@ -1,5 +1,6 @@
 package notificadores;
 
+
 import classroom.notifier.entity.Observable;
 import classroom.notifier.implement.Observer;
 
@@ -29,9 +30,9 @@ public class Telegram implements Observer {
     }
 
     @Override
-    public void update(Object arg) {
+    public void update(Observable observable, Object data) {
         try {
-            sendMessage(new String((String) arg));
+            sendMessage(new String((String) data));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
