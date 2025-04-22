@@ -12,6 +12,6 @@ public class NotificadorTest {
     public void TelegramTest(){
         Observer notificador =  new Telegram();
         String msj = "La materia pp3 cambio al aula A0102";
-        notificador.update(null,msj);
+        notificador.update(msj);
     }
 }

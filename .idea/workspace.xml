@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a69b405-0af9-4e00-9887-4b477a582250" name="Changes" comment="project updated">
+    <list default="true" id="8a69b405-0af9-4e00-9887-4b477a582250" name="Changes" comment="updated method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/notificadores/Telegram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/notificadores/Telegram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/NotificadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NotificadorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733785913427</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated method">
+      <created>1745201480615</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745201480615</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +291,7 @@
     <MESSAGE value="add sendMail" />
     <MESSAGE value="delete Email class" />
     <MESSAGE value="project updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="project updated" />
+    <MESSAGE value="updated method" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated method" />
   </component>
 </project>
