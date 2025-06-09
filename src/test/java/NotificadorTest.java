@@ -1,7 +1,7 @@
 
 
-import classroom.notifier.entity.Observable;
-import classroom.notifier.implement.Observer;
+
+import classroom.notifier.interfaces.Observer;
 import notificadores.Telegram;
 import org.junit.jupiter.api.Test;
 
