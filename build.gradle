@@ -21,7 +21,7 @@ dependencies {
     //implementation 'com.github.gcajal:ClassRoom-Notifier:us-3-SNAPSHOT'
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
-    implementation 'com.github.gcajal:ClassRoom-Notifier:766827e0fc'
+    implementation 'com.github.gcajal:ClassRoom-Notifier:7c223db2a9'
 }
 test {
     useJUnitPlatform()
