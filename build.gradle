@@ -33,8 +33,6 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
 //    implementation 'com.github.AluLescano:FerroNorte-Core:-SNAPSHOT'
-
-
 }
 test {
     useJUnitPlatform()
