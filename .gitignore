@@ -40,3 +40,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Ignorar archivo de configuración local de Gradle
+gradle.properties
