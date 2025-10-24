@@ -1,0 +1,41 @@
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+
+compileJava.options.encoding = 'UTF-8'
+compileTestJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven.pkg.github.com/AluLescano/FerroNorte-Core"
+        credentials {
+            username = project.findProperty("gpr.user") ?: ""
+            password = project.findProperty("gpr.key") ?: ""
+        }
+    }
+}
+
+dependencies {
+    //implementation "com.alulescano:ferroinc:1.0.0"
+    implementation "com.alulescano:core:1.0.2"
+    testImplementation 'junit:junit:4.13.1'
+    implementation 'org.json:json:20240303'
+
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+//    implementation 'com.github.AluLescano:FerroNorte-Core:-SNAPSHOT'
+
+
+}
+test {
+    useJUnitPlatform()
+}
