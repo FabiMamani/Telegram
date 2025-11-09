@@ -2,7 +2,7 @@ name: Publish Java Package
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   workflow_dispatch:   # Permite lanzar el workflow manualmente
 
 jobs:
@@ -34,17 +34,15 @@ jobs:
       # 4️⃣ Asegurar permisos de ejecución para el wrapper
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
-
-      # 5️⃣ Compilar el proyecto
       - name: Build with Gradle
         run: ./gradlew clean build
         env:
           GITHUB_ACTOR: ${{ github.actor }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
-      # 6️⃣ Publicar en GitHub Packages
       - name: Publish to GitHub Packages
         run: ./gradlew publish
         env:
           GITHUB_ACTOR: ${{ github.actor }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PACKAGES_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+
