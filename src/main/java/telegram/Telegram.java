@@ -1,4 +1,4 @@
-package extension;
+package telegram;
 
 import interfaces.MedioComunicacion;
 
