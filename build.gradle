@@ -1,13 +1,14 @@
-apply plugin: 'java-library'
-apply plugin: 'eclipse'
+plugins {
+    id 'java'
+}
 
-compileJava.options.encoding = 'UTF-8'
-compileTestJava.options.encoding = 'UTF-8'
+group 'com.fabimamani'
+version '1.0.0'
 
 repositories {
     mavenCentral()
     maven {
-        url "https://maven.pkg.github.com/AluLescano/FerroNorte-Core"
+        url "https://maven.pkg.github.com/FabiMamani/FerroNorte-core"
         credentials {
             username = project.findProperty("gpr.user") ?: ""
             password = project.findProperty("gpr.key") ?: ""
@@ -16,24 +17,19 @@ repositories {
 }
 
 dependencies {
-    //implementation "com.alulescano:ferroinc:1.0.0"
-    implementation "com.alulescano:core:1.0.2"
     testImplementation 'junit:junit:4.13.1'
-    implementation 'org.json:json:20240303'
-
+    //implementation project(':FerroInc')
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    //implementation "com.alulescano:core:1.0.3"
+    implementation 'com.fabimamani:core:1.0.0'
 }
 
-allprojects {
-    repositories {
-        maven { url 'https://jitpack.io' }
-    }
-}
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
-//    implementation 'com.github.AluLescano:FerroNorte-Core:-SNAPSHOT'
-}
+
 test {
     useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
