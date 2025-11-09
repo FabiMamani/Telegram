@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+}
+
+group 'com.fabimamani'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://maven.pkg.github.com/FabiMamani/FerroNorte-core"
+        credentials {
+            username = project.findProperty("gpr.user") ?: ""
+            password = project.findProperty("gpr.key") ?: ""
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+    //implementation project(':FerroInc')
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    //implementation "com.alulescano:core:1.0.3"
+    implementation 'com.fabimamani:core:1.0.0'
+}
+
+
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
