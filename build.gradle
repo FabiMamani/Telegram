@@ -8,7 +8,7 @@ version '1.0.0'
 repositories {
     mavenCentral()
     maven {
-        url "https://maven.pkg.github.com/AluLescano/FerroInc"
+        url "https://maven.pkg.github.com/FabiMamani/FerroNorte-core"
         credentials {
             username = project.findProperty("gpr.user") ?: ""
             password = project.findProperty("gpr.key") ?: ""
