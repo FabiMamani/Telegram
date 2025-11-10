@@ -2,21 +2,25 @@ plugins {
     id 'java'
 }
 
-group 'com.fabimamani'
-version '1.0.0'
+group = 'com.fabimamani'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
-    // Para dependencias públicas desde GitHub Packages (sin autenticación)
     maven {
         url = uri("https://maven.pkg.github.com/FabiMamani/FerroNorte-core")
+        credentials {
+            username = System.getenv("GITHUB_ACTOR")
+            password = System.getenv("GITHUB_TOKEN")
+        }
     }
 }
 
 dependencies {
+    implementation 'com.fabimamani:core:1.0.0'
+
     testImplementation 'junit:junit:4.13.1'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
-    implementation 'com.fabimamani:core:1.0.0'
 }
 
 test {
