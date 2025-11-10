@@ -32,11 +32,11 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew clean build
         env:
-          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_ACTOR: FabiMamani
           GH_PACKAGES_TOKEN: ${{ secrets.TOKEN }}
 
       - name: Publish to GitHub Packages
         run: ./gradlew publish
         env:
-          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_ACTOR: FabiMamani
           GH_PACKAGES_TOKEN: ${{ secrets.TOKEN }}
