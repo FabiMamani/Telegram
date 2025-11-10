@@ -8,15 +8,18 @@ version = '1.0.0'
 repositories {
     mavenCentral()
     maven {
-        name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/FabiMamani/FerroNorte-core")
         credentials {
-            // ✅ Prioriza variables de entorno para GitHub Actions
-            username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_ACTOR") ?: "FabiMamani"
-            password = project.findProperty("gpr.key") ?: System.getenv("GH_PACKAGES_TOKEN") ?: System.getenv("GITHUB_TOKEN")
+            username = project.findProperty("gpr.user")
+                ?: System.getenv("GITHUB_ACTOR")
+                ?: "FabiMamani"
+            password = project.findProperty("gpr.key")
+                ?: System.getenv("GH_PACKAGES_TOKEN")
+                ?: System.getenv("GITHUB_TOKEN")
         }
     }
 }
+
 
 dependencies {
     implementation 'com.fabimamani:core:1.0.0'
