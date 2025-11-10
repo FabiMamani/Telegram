@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'maven-publish' // 👈 necesario para habilitar la tarea "publish"
 }
 
 group = 'com.fabimamani'
@@ -18,7 +19,6 @@ repositories {
 
 dependencies {
     implementation 'com.fabimamani:core:1.0.0'
-
     testImplementation 'junit:junit:4.13.1'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
 }
@@ -29,4 +29,25 @@ test {
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId = 'com.fabimamani'
+            artifactId = 'telegram'
+            version = '1.0.0'
+        }
+    }
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/FabiMamani/Telegram")
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
 }
